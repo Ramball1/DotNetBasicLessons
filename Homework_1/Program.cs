@@ -1,0 +1,16 @@
+﻿string name = "Nikita ";
+string surname = "Prykhodko";
+Console.WriteLine(name + surname);
+int number = 20;
+string age = " - years of old";
+Console.WriteLine(number + age);
+string dateofbirth = "01/09/1939 - ";
+string invade = "Poland";
+Console.WriteLine(dateofbirth + invade);
+string city = "Kharkov - ";
+string country = "Ukraine";
+Console.WriteLine(city + country);
+int bitcoin = 65805;
+Console.WriteLine(bitcoin);
+bitcoin = 100000;
+Console.WriteLine(bitcoin);
