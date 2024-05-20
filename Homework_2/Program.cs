@@ -35,12 +35,12 @@ Console.WriteLine($"\tYour number: {num5 + num6 + num7 + num8 + num9 + num10}");
 
 
 //Console.Write("\nFirst digit: ");
-//var number11 = Convert.ToInt32(Console.ReadLine());
-//int num11 = number11;
+//var number11 = Convert.ToDecimal(Console.ReadLine());
+//decimal num11 = number11;
 //Console.Write("Second digit: ");
-//var number12 = Convert.ToInt32(Console.ReadLine());
-//int num12 = number12;
+//var number12 = Convert.ToDecimal(Console.ReadLine());
+//decimal num12 = number12;
 //Console.Write("Third digit: ");
-//var number13 = Convert.ToInt32(Console.ReadLine());
-//int num13 = number13;
+//var number13 = Convert.ToDecimal(Console.ReadLine());
+//decimal num13 = number13;
 //Console.WriteLine($"\tSum: {num11 + num12 + num13} \tArithmetical mean: {(num11 + num12 + num13) / 3}");
