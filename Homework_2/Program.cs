@@ -35,7 +35,8 @@ Console.WriteLine($"\tYour number: {num5 + num6 + num7 + num8 + num9 + num10}");
 
 
 Console.Write("\nFirst digit: ");
-var number11 = Convert.ToDecimal(Console.ReadLine());decimal num11 = number11;
+var number11 = Convert.ToDecimal(Console.ReadLine());
+decimal num11 = number11;
 Console.Write("Second digit: ");
 var number12 = Convert.ToDecimal(Console.ReadLine());
 decimal num12 = number12;
