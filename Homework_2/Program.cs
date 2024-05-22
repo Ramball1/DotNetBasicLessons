@@ -1,14 +1,14 @@
 ﻿Console.Write("First digit: ");
-var number1 = Convert.ToInt32(Console.ReadLine());
+var number1 = Convert.ToInt16(Console.ReadLine());
 int num1 = number1 * 1000;
 Console.Write("Second digit: ");
-var number2 = Convert.ToInt32(Console.ReadLine());
+var number2 = Convert.ToInt16(Console.ReadLine());
 int num2 = number2 * 100;
 Console.Write("Third digit: ");
-var number3 = Convert.ToInt32(Console.ReadLine());
+var number3 = Convert.ToInt16(Console.ReadLine());
 int num3 = number3 * 10;
 Console.Write("Fourth digit: ");
-var number4 = Convert.ToInt32(Console.ReadLine());
+var number4 = Convert.ToInt16(Console.ReadLine());
 int num4 = number4;
 Console.WriteLine($"\tYour number: {num1 + num2 + num3 + num4}");
 
@@ -36,11 +36,8 @@ Console.WriteLine($"\tYour number: {num5 + num6 + num7 + num8 + num9 + num10}");
 
 Console.Write("\nFirst digit: ");
 var number11 = Convert.ToDecimal(Console.ReadLine());
-decimal num11 = number11;
 Console.Write("Second digit: ");
 var number12 = Convert.ToDecimal(Console.ReadLine());
-decimal num12 = number12;
 Console.Write("Third digit: ");
 var number13 = Convert.ToDecimal(Console.ReadLine());
-decimal num13 = number13;
-Console.WriteLine($"\tSum: {num11 + num12 + num13} \tArithmetical mean: {(num11 + num12 + num13) / 3}");
+Console.WriteLine($"\tSum: {number11 + number12 + number13} \tArithmetical mean: {(number11 + number12 + number13) / 3}");
