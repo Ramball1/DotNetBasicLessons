@@ -37,6 +37,7 @@ else
     Console.WriteLine($"\tYour number: {number / 2}");
 }
 
+
 Console.Write("\nFirst number: ");
 var n1 = Convert.ToDecimal(Console.ReadLine());
 Console.Write("Second number: ");
