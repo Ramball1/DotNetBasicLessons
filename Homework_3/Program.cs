@@ -21,7 +21,7 @@ else if (total >= 0 && total < 4)
 }
 else
 {
-    Console.WriteLine("\tIncorrect");
+    Console.WriteLine("\tIncorrect: Try Again");
 }
 
 
