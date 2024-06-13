@@ -130,13 +130,13 @@ namespace Homework_7
             }
 
             var num6FirstDigit = arr[0];
-            var nums6SecondDigit = arr[1];
+            var num6SecondDigit = arr[1];
             var num6ThirdDigit = arr[2];
             var num6FourthDigit = arr[3];
             var num6FifthDigit = arr[4];
             var num6SixthDigit = arr[5];
 
-            var nums6FirstThreeDigitSum = num6FirstDigit + nums6SecondDigit + num6ThirdDigit;
+            var nums6FirstThreeDigitSum = num6FirstDigit + num6SecondDigit + num6ThirdDigit;
             var nums6LastThreeDigits = num6FourthDigit + num6FifthDigit + num6SixthDigit;
 
             if (nums6FirstThreeDigitSum != nums6LastThreeDigits)
