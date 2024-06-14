@@ -93,7 +93,6 @@ namespace Homework_8
         public static void Main()
         {
             Console.OutputEncoding = Encoding.UTF8;
-
             try
             {
                 Console.WriteLine($"Task Launch: Press: {(char)MenuItem.Task}");
