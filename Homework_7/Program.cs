@@ -252,7 +252,6 @@ namespace Homework_7
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
-
             }
         }
     }
