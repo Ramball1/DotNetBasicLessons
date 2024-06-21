@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.Diagnostics.Metrics;
 using System.Numerics;
 using System.Reflection.Metadata.Ecma335;
 using System.Runtime.Serialization.Formatters;
@@ -15,7 +16,8 @@ namespace Homework_6
     enum MenuItem
     {
         Task1 = '!',
-        Task2 = '$'
+        Task2 = '$',
+        Task3 = '%'
     }
 
     public class Program
@@ -25,11 +27,11 @@ namespace Homework_6
             Console.OutputEncoding = Encoding.UTF8;
             try
             {
-                Console.WriteLine($"First Task Launch: Press: {(char)MenuItem.Task1} \nSecond Task Launch: Press: {(char)MenuItem.Task2}");
+                Console.WriteLine($"First Task Launch: Press: {(char)MenuItem.Task1} \nSecond Task Launch: Press: {(char)MenuItem.Task2} \nThird Task Launch: Press: {(char)MenuItem.Task3}");
                 var menuSelect = (char)Console.Read();
                 var currentSelect = (MenuItem)menuSelect;
 
-                if (currentSelect != MenuItem.Task1 && currentSelect != MenuItem.Task2)
+                if (currentSelect != MenuItem.Task1 && currentSelect != MenuItem.Task2 && currentSelect != MenuItem.Task3)
                 {
                     throw new Exception("\n\tНе вводите цифры или другие символы кроме предоставленных!");
                 }
@@ -147,6 +149,36 @@ namespace Homework_6
                             profitMonthMax = arr.Max();
                         }
                         Console.WriteLine($"\n\nTotal Profit of the Company 'CD Project RED' for One Year: {(char)Currency.Euro}{totalProfit} \n\nMinimal Profit of The Company 'CD Project RED' for One Month: {(char)Currency.Euro}{profitMonthMin} \n\nMaximum Profit of The Company 'CD Project RED' for One Month: {(char)Currency.Euro}{profitMonthMax}");
+                        break;
+                    case MenuItem.Task3:
+                        int[] firstArray = { 2, 7, 9, 0, 3, 0, 1, 0, 6, 8 };
+                        int[] secondArray = new int[firstArray.Length];
+                        const int numToDelete = 0;
+                        var numToDeleteCount = 0;
+                        const int numToInsert = -1;
+
+                        foreach (var item in firstArray)
+                        {
+                            if (item != numToDelete)
+                            {
+                                secondArray[numToDeleteCount++] = item;
+
+                                for (int i = 0; i < secondArray.Length; i++)
+                                {
+                                    if (secondArray[i] == numToDelete)
+                                    {
+                                        secondArray[i] = numToInsert;
+                                    }
+                                }
+                            }
+                        }
+
+                        foreach (var item in secondArray)
+                        {
+                            Console.Write($"{item} \t");
+                        }
+
+                        Console.WriteLine("\n");
                         break;
                 }
             }
