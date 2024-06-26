@@ -53,7 +53,6 @@ namespace Homewokr_10
                                 {
                                     Console.WriteLine($"Sorry, Your Home Number: {HomeNumber.Trim()} was not accepted: Try entering it again: ");
                                     Console.WriteLine();
-                                    continue;
                                 }
                             }
                             break;
@@ -75,7 +74,6 @@ namespace Homewokr_10
                                 {
                                     Console.WriteLine($"Sorry, Your Phone Number: {PhoneNumber.Trim()} was not accepted: Try entering it again: ");
                                     Console.WriteLine();
-                                    continue;
                                 }
                             }
                             break;
@@ -97,7 +95,6 @@ namespace Homewokr_10
                                 {
                                     Console.WriteLine($"Sorry, Your Email: {email.Trim()} was not accepted: Try entering it again: ");
                                     Console.WriteLine();
-                                    continue;
                                 }
                             }
                             break;
