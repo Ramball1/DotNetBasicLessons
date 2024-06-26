@@ -43,13 +43,13 @@ namespace Homewokr_10
                                 string HomeNumber = Console.ReadLine() ?? string.Empty;
                                 string HomeNumber_Validator = "^[0-9]{7}$";
 
-                                if (Regex.IsMatch(HomeNumber.Trim(), HomeNumber_Validator) == true)
+                                if (Regex.Match(HomeNumber.Trim(), HomeNumber_Validator).Success)
                                 {
                                     Console.WriteLine($"Thank You! Your Home Number: {HomeNumber.Trim()} was accepted");
                                     break;
                                 }
 
-                                if (Regex.IsMatch(HomeNumber.Trim(), HomeNumber_Validator) == false)
+                                else 
                                 {
                                     Console.WriteLine($"Sorry, Your Home Number: {HomeNumber.Trim()} was not accepted: Try entering it again: ");
                                     Console.WriteLine();
@@ -64,13 +64,13 @@ namespace Homewokr_10
                                 string PhoneNumber = Console.ReadLine() ?? string.Empty;
                                 string PhoneNumber_Validator = "^[+]?[0-9]{10,15}$";
 
-                                if (Regex.IsMatch(PhoneNumber.Trim(), PhoneNumber_Validator) == true)
+                                if (Regex.Match(PhoneNumber.Trim(), PhoneNumber_Validator).Success)
                                 {
                                     Console.WriteLine($"Thank You! Your Phone Number: {PhoneNumber.Trim()} was accepted");
                                     break;
                                 }
 
-                                if (Regex.IsMatch(PhoneNumber.Trim(), PhoneNumber_Validator) == false)
+                                else
                                 {
                                     Console.WriteLine($"Sorry, Your Phone Number: {PhoneNumber.Trim()} was not accepted: Try entering it again: ");
                                     Console.WriteLine();
@@ -85,13 +85,13 @@ namespace Homewokr_10
                                 string email = Console.ReadLine() ?? string.Empty;
                                 string email_Validator = "^[a-zA-Z](?:[._]?[a-zA-Z0-9]{4,19}|[a-zA-Z0-9]{4,19})[@](([g][m][a][i][l])?([i][c][l][o][u][d])?([y][a][h][o][o])?)+[.][c][o][m]$";
 
-                                if (Regex.IsMatch(email.Trim(), email_Validator) == true)
+                                if (Regex.Match(email.Trim(), email_Validator).Success)
                                 {
                                     Console.WriteLine($"Thank You! Your Email: {email.Trim()} was accepted");
                                     break;
                                 }
 
-                                if (Regex.IsMatch(email.Trim(), email_Validator) == false)
+                                else
                                 {
                                     Console.WriteLine($"Sorry, Your Email: {email.Trim()} was not accepted: Try entering it again: ");
                                     Console.WriteLine();
@@ -112,11 +112,11 @@ namespace Homewokr_10
                                 string patronymic = Console.ReadLine() ?? string.Empty;
                                 string patronymic_Validator = "^[A-Z][a-z]{2,20}";
 
-                                if (Regex.IsMatch(firstName.Trim(), firstName_Validator) == true)
+                                if (Regex.Match(firstName.Trim(), firstName_Validator).Success)
                                 {
-                                    if (Regex.IsMatch(lastName.Trim(), lastName_Validator) == true)
+                                    if (Regex.Match(lastName.Trim(), lastName_Validator).Success)
                                     {
-                                        if (Regex.IsMatch(patronymic.Trim(), patronymic_Validator) == true)
+                                        if (Regex.Match(patronymic.Trim(), patronymic_Validator).Success)
                                         {
                                             Console.WriteLine($"\nThank You! Your Full Name: {firstName.Trim()} {lastName.Trim()} {patronymic.Trim()} was accepted");
                                             break;
@@ -127,11 +127,11 @@ namespace Homewokr_10
                                     }
                                 }
 
-                                if (Regex.IsMatch(firstName.Trim(), firstName_Validator) == true)
+                                if (Regex.Match(firstName.Trim(), firstName_Validator).Success)
                                 {
                                     if (Regex.IsMatch(lastName.Trim(), lastName_Validator) == false)
                                     {
-                                        if (Regex.IsMatch(patronymic.Trim(), patronymic_Validator) == true)
+                                        if (Regex.Match(patronymic.Trim(), patronymic_Validator).Success)
                                         {
                                             Console.WriteLine($"\nSorry, Your Last Name: {lastName.Trim()} is incorrect: Try entering Full Name again: ");
                                             Console.WriteLine();
@@ -145,9 +145,9 @@ namespace Homewokr_10
 
                                 if (Regex.IsMatch(firstName.Trim(), firstName_Validator) == false)
                                 {
-                                    if (Regex.IsMatch(lastName.Trim(), lastName_Validator) == true)
+                                    if (Regex.Match(lastName.Trim(), lastName_Validator).Success)
                                     {
-                                        if (Regex.IsMatch(patronymic.Trim(), patronymic_Validator) == true)
+                                        if (Regex.Match(patronymic.Trim(), patronymic_Validator).Success)
                                         {
                                             Console.WriteLine($"\nSorry, Your First Name: {firstName.Trim()} is incorrect: Try entering Full Name again: ");
                                             Console.WriteLine();
@@ -163,7 +163,7 @@ namespace Homewokr_10
                                 {
                                     if (Regex.IsMatch(lastName.Trim(), lastName_Validator) == false)
                                     {
-                                        if (Regex.IsMatch(patronymic.Trim(), patronymic_Validator) == true)
+                                        if (Regex.Match(patronymic.Trim(), patronymic_Validator).Success)
                                         {
                                             Console.WriteLine($"\nSorry, Your First Name: {firstName.Trim()} and Your Last Name: {lastName.Trim()} is incorrect: Try entering Full Name again: ");
                                             Console.WriteLine();
