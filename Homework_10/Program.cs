@@ -18,7 +18,6 @@ namespace Homewokr_10
         {
             Console.OutputEncoding = Encoding.UTF8;
 
-
             while (true)
             {
                 try
