@@ -256,7 +256,6 @@ namespace Homework_11
                             {
                                 var city = new City();
                                 city.ShowInfo();
-
                                 break;
                             }
                         case MenuItem.TaskCountry:
@@ -265,7 +264,6 @@ namespace Homework_11
                                 country.ShowInfo();
                                 var cities = new Country.Cities("Kyiv", "Kharkiv", "Odesa", "Dnipro", "Zaporizhzhia", "Lviv", "Kryvyi Rih", "Mykolaiv", "Mariupol", "Vinnytsia", "Kherson", "Poltava", "Chernihiv", "Cherkasy", "Sumy", "Zhytomyr", "Khmelnytskyi", "Chernivtsi", "Rivne", "Kropyvnytskyi", "Ivano-Frankivsk", "Ternopil", "Lutsk", "Bila Tserkva", "Kramatorsk", "Melitopol", "Uzhhorod", "Berdiansk", "Nikopol", "Sloviansk", "Brovary", "Sievierodonetsk", "Pavlohrad", "Kamianets-Podilskyi", "Lysychansk", "Konotop", "Drohobych", "Kovel", "Shostka", "Oleksandriia", "Mukachevo", "Korosten", "Stryi", "Izmail", "Yevpatoria", "Bakhmut", "Fastiv", "Alchevsk", "Boyarka", "Chervonohrad");
                                 cities.ShowCitiesInfo();
-
                                 break;
                             }
                     }
